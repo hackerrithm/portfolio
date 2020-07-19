@@ -1,7 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import AppRouter from "./routes/router";
+import RouteManager from "./components/routes/RouteManager";
 
 // function App() {
 //   return (
@@ -23,11 +23,10 @@ import AppRouter from "./routes/router";
 //     </div>
 //   );
 // }
-const App = () => {
+
+const App = (props: any) => {
 	return (
-		<div className="App">
-			<AppRouter />
-		</div>
+			<RouteManager children={props.children} />
 	);
 };
 

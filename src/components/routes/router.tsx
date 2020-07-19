@@ -4,7 +4,7 @@ import Projects from "../projects/Projects";
 import Start from "../start/Start";
 import Navigation from "../navigation/Navigation";
 
-const AppRouter = () => {
+function AppRouter({ children }: { children: React.ReactChild }) {
 	return (
 		<Router>
 			<Navigation />
